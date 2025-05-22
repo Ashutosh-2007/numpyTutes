@@ -1,7 +1,7 @@
 import numpy as np
 
 aray = np.full((3,2),5)
-# print(aray)
+print(aray)
 # print(aray.shape)
 # print(aray.size)
 
