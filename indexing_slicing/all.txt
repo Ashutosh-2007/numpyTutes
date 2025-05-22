@@ -1,0 +1,4 @@
+array[index] for 1D array
+array[row, column] for 2D array
+
+slicing me start:stop:step vala concept 

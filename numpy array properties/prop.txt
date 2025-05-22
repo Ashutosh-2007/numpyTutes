@@ -1,0 +1,4 @@
+.shape tells us about how many rows and columns are present
+.size tells us about how many elements are present in array
+.ndim tells us about dimension of an array
+.dtype tells us about data type of arr

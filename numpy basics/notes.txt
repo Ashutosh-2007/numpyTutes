@@ -1,0 +1,39 @@
+A matrix is a 2-dimensional data structure: rows × columns.
+A matrix supports matrix multiplication using * (which can be confusing).
+
+ Multi-Dimensional Array:
+An n-dimensional array (ndarray) is more general.
+
+It can be 1D, 2D, 3D, ..., nD.
+
+This is what you get with numpy.array().
+
+for giving shape use normal paranthesis or tuple [(),2] here tuplr is shape and two is a fill_value which ever we wanted to printed
+
+/////////////////////////////////////////////////////////
+
+np.zeros(shape)
+3 → means a 1D array with 3 elements: [0. 0. 0.]
+
+You can also pass a tuple for multi-dimensional:(2, 3) = 2 rows, 3 columns → 2D array of zeros
+
+///////////////////////////////////////////////////////////
+
+np.ones(shape)
+(2, 3) → shape of the array → 2 rows, 3 columns.
+
+Always pass a tuple for multi-dimensional shapes.
+
+////////////////////////////////////////////////////////////
+
+np.full(shape, fill_value)
+((3, 3), 1) = (3, 3) → shape of the array
+
+1 → value to fill all elements with.
+
+Result: a 3x3 array filled with 1s.
+
+
+np.eye(N) = 2 → creates a 2x2 identity matrix.
+
+You can also use np.eye(N, M) to get a non-square identity-like matrix.

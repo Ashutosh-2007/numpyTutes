@@ -1,0 +1,69 @@
+.reshape()
+
+.reshape(-1, ...) (inferred dimensions)
+
+.newaxis or np.expand_dims()
+
+🧪 Example: Start with a 1D array
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5, 6])
+print(arr.shape)  # (6,)
+
+📏 Convert to 2D
+
+arr_2d = arr.reshape(2, 3)
+print(arr_2d.shape)  # (2, 3)
+
+📐 Convert to 3D
+
+arr_3d = arr.reshape(1, 2, 3)
+print(arr_3d.shape)  # (1, 2, 3)
+
+
+✅ 1D Array (One Level of Brackets)
+python
+Copy code
+arr = np.array([1, 2, 3, 4])
+Looks like: [1, 2, 3, 4]
+
+Shape: (4,) → 4 elements in one row
+
+Visual clue: Just a list of numbers (flat).
+
+Dimension: 1D
+
+✅ 2D Array (List of Lists)
+python
+Copy code
+arr = np.array([[1, 2], [3, 4]])
+Looks like: [[1, 2], [3, 4]]
+
+Shape: (2, 2) → 2 rows, 2 columns
+
+Visual clue: A list where each item is another list (like rows of a table).
+
+Dimension: 2D
+
+✅ 3D Array (List of 2D Arrays)
+python
+Copy code
+arr = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+Looks like: [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+
+Shape: (2, 2, 2) → 2 blocks, each block has 2 rows and 2 columns
+
+Visual clue: List of matrices (2D arrays) — one more level of brackets.
+
+Dimension: 3D
+
+🔍 Quick Trick: Count the bracket levels
+Look at how deep the nesting goes:
+
+[1, 2, 3] → 1D
+
+[[1, 2], [3, 4]] → 2D
+
+[[[1, 2], [3, 4]], [[5, 6], [7, 8]]] → 3D
+
