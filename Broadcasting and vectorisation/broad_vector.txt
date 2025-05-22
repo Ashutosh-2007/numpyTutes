@@ -1,0 +1,20 @@
+ what is broadcasting ?
+
+ Broadcasting in Python (specifically in NumPy) is a powerful feature that allows arrays of different shapes to be used together in arithmetic operations without explicitly reshaping or copying data.
+
+
+# 1 --> matching dmension = match hoga to addn and multiplication aaam se hoga
+# 2 --> expanding single elements 
+# 3 --> Incompatible shapes ke sath koi operation perform nahi hogi\
+
+
+If two arrays differ in their number of dimensions, the shape of the smaller one is padded with ones on the left.
+
+Dimensions are compatible if:
+
+They are equal, or
+
+One of them is 1
+
+Arrays are broadcast to a common shape by "stretching" the 1-sized dimensions.
+
